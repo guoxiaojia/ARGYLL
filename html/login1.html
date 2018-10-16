@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<div id="login-box">
+    <div id="login-icon"><img src="../images/login/login_03.png" alt=""></div>
+    <form id="login-form" action="">
+        <!--验证提示-->
+        <div id="error_msg">
+            <!--<div class="alert alert-danger">请输入ID</div>-->
+        </div>
+
+        <h3 class="title">Client Center</h3>
+        <div class="language">
+            <label for="" class="iconfont icon-iconfontdiqiu"></label>
+            <select name="selectlang" id="selectlang" class="form-control">
+                <option value="en">English</option>
+                <option value="zh-CN">Chinese</option>
+            </select>
+        </div>
+        <div class="username">
+            <label for="" class="iconfont icon-ren"></label>
+            <input type="text" name="uname" id="uname" class="form-control"  placeholder="Enter Client ID">
+        </div>
+        <div class="password">
+            <label for="" class="iconfont icon-lock-fill"></label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password">
+        </div>
+        <div class="Verification">
+            <input type="text" placeholder="Security Code" id="captcha" name="captcha" class="form-control" onkeypress="isNumberKeydot(event)">
+            <button id="yzm" type="button">OW3G</button>
+        </div>
+        <div class="submit">
+            <input type="submit" value="SIGN IN">
+        </div>
+        <P class="tishi">NOT A CLTNT?SIGN UP NOW!</P>
+    </form>
+</div>
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/login1.js"></script>
+</body>
+</html>

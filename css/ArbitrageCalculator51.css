@@ -1,0 +1,35 @@
+header{ display: block; position: relative; background: #0991a5; color: #fff; font-size: 0.2rem;}
+header p{ text-align: center; height:0.6rem; line-height:0.6rem;  }
+header a.glyphicon{ color: #fff; position: absolute; top:0.22rem; left: 0.11rem;  }
+header a:link{ text-decoration: none; }
+
+#scroller{ padding: 10px;}
+
+.top-a{ padding-top: 14px;}
+.top-a ul{ }
+.top-a ul li{ display: flex;flex-direction: row; border-bottom: 1px solid #f7f7f7; }
+.top-a ul li>div{ height: 39px; line-height: 39px;}
+.top-a ul li>div:nth-child(1){ width: 30%; background:#00394e;  text-align: center; color: #fff; }
+.top-a ul li>div:nth-child(2){ width: 70%; background: #eeeeee; text-indent: 8px;}
+
+.nums{display: flex;flex-direction: row; margin: 20px 0; }
+.nums >div{height: 39px; line-height: 39px; }
+.nums >div:nth-child(1){ width: 30%; background:#00394e;  text-align: center; color: #fff;  }
+.nums >div:nth-child(2){ width: 70%; background: #eeeeee; text-indent: 8px; }
+.nums div span{display: inline-block; width: 10%; text-align: center; }
+.nums div input{background: #fff; height: 32px;line-height: 32px; width: 85%; text-indent: 8px; }
+
+.tables{ }
+.tables ul{ border: 1px solid #f3f3f3; }
+.tables ul li{display: flex;flex-direction: row;  border-bottom: 1px solid #f3f3f3; }
+.tables ul li>div{ text-align: center;height: 39px; line-height: 39px; }
+.tables ul li>div:nth-child(1){ width: 30%; border-right: 1px solid #f3f3f3; }
+.tables ul li>div:nth-child(2){ width: 30%;border-right: 1px solid #f3f3f3; }
+.tables ul li>div:nth-child(3){  width: 40%;}
+
+.bottoms{ }
+.bottoms ul{ }
+.bottoms ul li{ display: flex;flex-direction: row; border-bottom: 1px solid #f7f7f7;}
+.bottoms ul li>div{height: 39px; line-height: 39px;  }
+.bottoms ul li>div:nth-child(1){ width: 40%; text-align: center; background:#00394e; color: #fff;}
+.bottoms ul li>div:nth-child(2){ width: 60%; background: #eee; text-indent: 8px; color: #0991a5;}

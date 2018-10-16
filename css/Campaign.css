@@ -1,0 +1,76 @@
+body{ background: #eee; }
+#wrapper{background: #eee;}
+header{ background: #0991a5; color: #fff; font-size: 0.36rem;height: 60px;display: flex;padding: 0 20px;justify-content: space-between;align-items: center;}
+header p{ text-align: center;}
+header a.glyphicon{color: #fff;  }
+header a:active{ text-decoration: none; }
+header a:visited{ text-decoration: none; }
+header a:hover{ text-decoration: none; }
+
+.sear{ position: relative; padding: 0 0.18rem;margin-top:15px;}
+.sear form{}
+.sear form input{ text-indent: 0.16rem; text-align: center; color: #9f9f9f; background: #fff; height: 0.6rem; line-height: 0.6rem; width: 100%; box-sizing:  border-box; border: 1px solid #dcdcdc; border-radius: 0.1rem;}
+.sear span{ font-size: 0.35rem;  position: absolute; color: #9f9f9f; left: 46%; margin-left: -0.5rem; top: 0.13rem;}
+section{ padding-top:0.35rem; }
+section .list,section .list2,section .list3{ margin-left: 0.11rem;font-size:14px;}
+
+.sect2{ margin-top: 0.3rem; }
+
+
+.sect2 .data-list{border:1px solid #E1E1E1;border-radius:0.2rem;display: flex;flex-direction: row;margin:0 0.1rem 0.1rem;overflow: hidden;background:#fff;}
+.sect2 .data-list .data-l-t{width:8%;text-align: center;background:#0991A5;display: flex;justify-content: center;align-items: center;}
+.sect2 .data-list .data-l-t span{color:#fff;font-size:0.24rem;line-height:2.6rem;}
+.sect2 .data-list .data-l-c{width:92%;}
+.sect2 .data-list .data-l-c .title{margin-top:0.1rem;font-size:0.18rem;border-bottom:1px solid #BDBDBD;padding-bottom:0.1rem;margin-bottom:0.1rem;}
+.sect2 .data-list .data-l-c .title p{margin:0;font-size:14px;font-weight: bold;text-align: center;}
+.sect2 .data-list .data-l-c .date{display: flex;flex-direction: row;padding-left:0.8rem;}
+.sect2 .data-list .data-l-c .date{}
+.sect2 .data-list .data-l-c .date .date-d .d-t,.sect2 .data-list .data-l-c .date .date-dur .d-d-t,.sect2 .data-list .data-l-c .rol .rol-r .r-r-t,.sect2 .data-list .data-l-c .rol .rol-dur .r-d-d{font-size:14px;margin:0;font-weight:bold;}
+.sect2 .data-list .data-l-c .date .date-d,.sect2 .data-list .data-l-c .rol .rol-r{width:2.4rem;margin:0;margin-right:1rem;}
+.sect2 .data-list .data-l-c .date .date-d .d-d,.sect2 .data-list .data-l-c .rol .rol-r .r-r-d,.sect2 .data-list .data-l-c .date .date-dur .r-d-e{margin:0;font-size:14px;color:#353535;}
+.sect2 .data-list .data-l-c .rol{margin:0;display: flex;flex-direction: row;padding-left:0.8rem;}
+.sect2 .data-list .progress{width:80%;height:10px;background:#D7D6D6;position:relative;margin-top:0.05rem;}
+
+.orange:not(select):not(input):not(.list):not(.progress):not(.progress-circle) {
+    background-color: #FFA500 !important;
+    color: #fff !important;}
+
+.sect2 .data-list .buttons{width:100%;padding:0;margin-bottom:0.3rem;text-align: center;}
+.sect2 .data-list .btn{font-size:14px;color:#fff;padding:0.1rem 0.3rem;}
+
+
+
+.sect3{margin-bottom:0.3rem;text-align: center;margin-top:50px;}
+.sect3>div{ margin-right: 0.15rem; height: 40px; line-height: 40px; color:#999;display: inline-block;}
+.sect3 .btnn{ width: 80px; background: #fff; border: 0.01rem solid #dcdcdc; border-radius:0.1rem;  }
+.sect3 .btnn2{ width: 40px; background:#e5e5e5; border: 0.01rem solid #b5b5b5;  }
+.sect3 .btnn3{margin-right: 0; color: #fff; background:#0992a5;border-radius:0.1rem; width: 66px;border: 0.01rem solid #dcdcdc;  }
+.sect3 .btnn3 a{color:#fff;}
+
+.Campaign-tabs{height:42px;border:0;background:#fff;}
+.Campaign-tabs li{width:50%;height:100%;border:0;line-height:40px;text-align: center;float: left;}
+.Campaign-tabs li a{border-radius: 4px 4px 0 0;padding:10px 0;
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    font-size:15px;
+    border:0;
+    border-bottom:2px solid #fff;
+}
+li.active a{border-bottom-color:#0991A5;color:#0991A5;}
+.tab-content .tab{display: none;}
+.tab-content .tab:nth-child(1){display: block;}
+
+.disabled{    opacity: 0.7 !important;
+    cursor: default !important;
+    pointer-events: none;
+}
+@media (min-width:760px) {
+    .sear form input{font-size:18px;}
+    section .list3{font-size:16px;}
+    .sect2 .data-list .data-l-c .title{font-size:16px;}
+    .sect2 .data-list .data-l-c .title p{font-size:16px;}
+    .sect2 .data-list .data-l-c .date .date-d .d-t, .sect2 .data-list .data-l-c .date .date-dur .d-d-t, .sect2 .data-list .data-l-c .rol .rol-r .r-r-t, .sect2 .data-list .data-l-c .rol .rol-dur .r-d-d{font-size:16px;}
+    .sect2 .data-list .data-l-c .date .date-d .d-d, .sect2 .data-list .data-l-c .rol .rol-r .r-r-d, .sect2 .data-list .data-l-c .date .date-dur .r-d-e{font-size:16px;}
+}
+

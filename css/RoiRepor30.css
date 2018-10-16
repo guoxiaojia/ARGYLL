@@ -1,0 +1,53 @@
+body{ background: #eee; }
+header{ z-index: 99; display: block; width: 100%; top: 0; position:fixed; background: #0991a5; color: #fff; font-size: 0.2rem;}
+header p{ text-align: center; height:0.6rem; line-height:0.6rem;  margin: 0; }
+header a.glyphicon{ color: #fff; position: absolute; top:0.22rem; left: 0.11rem;  }
+header a:link{ text-decoration: none;}
+
+/*日历*/
+.data{ }
+.data span{ background:#d5d5d5;}
+.data .input-group-addon{ padding:0.06rem 0.06rem;  }
+.data span a{ color: #646464; font-size: 0.18rem; }
+.datetimepicker{ }
+
+.data form{ display: flex; flex-direction: row; justify-content: space-around; }
+.data form dl{ width: 36%; }
+.data form dl:last-child{ width: 15%; }
+.data form dl dt{ height: 0.4rem; line-height: 0.4rem; font-weight: normal; }
+.data form dl dd{ height: 0.34rem; line-height: 0.34rem;  }
+.data form dl dd input[type=text]{ text-align: center;  background: #fff;}
+.data form dl dd input[type=submit]{  height:0.32rem; line-height: 0.32rem; width: 100%; background: #0f8da4; color: #fff; }
+.data .form-control { padding:0.06rem 0.03rem; }
+
+
+.sear{ position: relative; padding:0 0.18rem; margin-top: 0.4rem;}
+.sear form{}
+.sear form input{ text-indent: 0.16rem; text-align: center; color: #9f9f9f; background: #fff; height: 0.4rem; line-height: 0.4rem; width: 100%; box-sizing:  border-box; border: 0.01rem solid #dcdcdc; border-radius: 0.06rem;}
+.sear span{ font-size: 0.16rem;  position: absolute; color: #9f9f9f; left: 50%; margin-left: -0.4rem; top: 0.13rem;}
+
+section{ padding-top:0.1rem; }
+section .list,section .list2,section .list3{ margin-left: 0.11rem; }
+
+.sect2{ padding: 0 0.1rem; margin-top: 0.3rem; }
+.sect2 .tab{ margin-bottom: 0.1rem; text-align: center; background: #fff;border: 0.01rem solid #dcdcdc;  border-radius:0.08rem; overflow:hidden;display: flex; flex-direction: row; }
+.sect2 .tab>div{  }
+.sect2 .tab .num{ color: #fff; width: 10%; background: #0992a5; display: flex;flex-direction: row; justify-content: center; align-items: center;}
+.sect2 .tab .lis{ width: 90%;}
+.sect2 .tab .lis span{height: 0.3rem; line-height: 0.3rem; display: block; margin-top: 0.1rem;}
+.sect2 .tab .lis ul li:nth-child(2n-1) div{ font-weight: bold;  }
+.sect2 .tab .lis ul li:nth-child(2n) div{  }
+.sect2 .tab .lis ul li{  display: flex; flex-direction: row;  padding-left: 10px;}
+.sect2 .tab .lis ul li>div{overflow: hidden;   text-align: start;  width: 50%;   line-height: 0.28rem;}
+
+.sect3{ margin: 0.4rem 0; text-align: center; }
+.sect3 .aa{ display:inline-block}
+.sect3 .aa>div{ margin-right: 0.15rem; height: 0.4rem; line-height: 0.4rem; }
+.sect3 .aa a{ color:#999;}
+.sect3 .btnn{ width: 0.95rem; background: #fff; border: 0.01rem solid #dcdcdc; border-radius:0.04rem;  }
+.sect3 .btnn2{ width: 0.46rem; background:#e5e5e5; border: 0.01rem solid #b5b5b5;  }
+.sect3 .btnn3{margin-right: 0; background:#0992a5;border-radius:0.04rem; width: 0.67rem;  }
+.sect3 .btnn3 a{  color: #fff; }
+.sect3 a>div:active{ font-weight: bold;}
+
+

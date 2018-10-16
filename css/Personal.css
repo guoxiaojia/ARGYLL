@@ -1,0 +1,32 @@
+p{margin:0;}
+#header{position:absolute;left:0;top:0;width:100%;height:60px;background:#0991A5;display: flex;flex-direction: row;justify-content: space-between;padding:0 0.25rem;align-items: center;font-size:0.36rem;color:#FAFCFD;}
+#header a{ color: #fff; }
+#header a:link{ text-decoration: none;  }
+
+#wrapper{background:#EEEEEE; }
+#warpper{width:100%; }
+#content{margin:0 0.25rem;}
+#content .title{width:100%;display: flex;flex-direction: row;justify-content: space-between;border:1px solid #DFDFDF;border-radius:0.2rem;margin:0.3rem 0;background:#fff;overflow: hidden;}
+#content .title div{width:33.3333%;font-size:0.2rem;display: flex;justify-content: center;align-items: center;color:#8C8C8C;}
+#content .title div span{text-align: center;}
+#content .active.title-1{background:#0991A5;}
+#content .active.title-1 span{color:#fff;}
+#content .title .title-3 span{padding-left:0.1rem;border-left:1px solid #B9B9B9;}
+
+#update_profile{margin:0 0.25rem;}
+#update_profile .form-t{font-size:0.3rem;color:#333333;border-bottom:1px solid #CECECE;margin-bottom:0.3rem;}
+#update_profile .f-num,#update_profile .f-addr,#update_profile .f-birth,#update_profile .f-id{margin-top:0.1rem;}
+#update_profile .f-name,#update_profile .f-num,#update_profile .f-addr,#update_profile .f-birth,#update_profile .f-id{display: flex;flex-direction: column;}
+#update_profile .f-name label,#update_profile .f-num label,#update_profile .f-addr label,#update_profile .f-birth label,#update_profile .f-id label{font-size:18px;color:#424242;}
+
+#update_profile .f-name label span,#update_profile .f-num label span,#update_profile .f-addr label span,#update_profile .f-birth label span,#update_profile .f-id label span{color:#FF0202;}
+
+#update_profile .f-name input,#update_profile .f-num input,#update_profile .f-addr input,#update_profile .f-birth input,#update_profile .f-id input{border:1px solid #E2E2E2;height:40px;padding-left:0.2rem;border-radius:8px;background-color:#fff; font-size: 14px;}
+
+.btns{margin:0.8rem 0;display: flex;flex-direction: row;justify-content: center; }
+.btns .prev,.btns .sub{width:80px;height:40px;border:1px solid #DDDDDD;border-radius:8px;text-align: center;line-height:40px;}
+.btns .prev{margin-right:0.6rem;color:#9B9B9B;background:#E5E5E5;font-size:14px;text-decoration: none;}
+.btns .sub{color:#fff;background:#0991A5;font-size:14px;}
+
+
+.btns .prev:active{font-size:0.3rem;}

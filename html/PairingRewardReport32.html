@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pairing Reward Report</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../lib/data/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/PairingRewardReport32.css">
+</head>
+<body>
+<header>
+    <p>Pairing Reward Report</p>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+</header>
+
+<div id="wrapper">
+    <div id="scroller">
+
+       <div class="sear">
+    <form>
+        <input type="search" placeholder="Seach" aria-controls="table_id2">
+    </form>
+    <span class="glyphicon glyphicon-search"></span>
+</div>
+<!--日历-->
+        <section class="data">
+    <form>
+        <dl>
+            <dt>From Data</dt>
+            <dd>
+                <div class="input-group input-append date form_datetime">
+                    <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                    <input  type="text" aria-describedby="basic-addon1"  size="16" value="2017/07/07" readonly class="form-control"/>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>To Data</dt>
+            <dd>
+                <div class="input-group input-append date form_datetime">
+                    <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                    <input  type="text" aria-describedby="basic-addon1"  size="16" value="2017/07/07" readonly class="form-control"/>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt></dt>
+            <dd>
+                <input type="submit" name="submit" value="Search">
+            </dd>
+        </dl>
+    </form>
+</section>
+<!--日历结束-->
+        <section class="clear">
+    <div class="fl list">Display</div>
+    <div class="fl list2">
+        <select name="table_id2_length" aria-controls="table_id2">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="-1" selected="selected">All</option>
+        </select>
+    </div>
+    <div class="fl list3">records per page</div>
+</section>
+        <section class="sect2">
+    <form>
+        <ul>
+            <li><label>Created On</label><span>02/07/2017</span></li>
+            <li><label>Left SV</label><span>20,000.00</span></li>
+            <li><label>Right SV</label><span>0.00</span></li>
+            <li><label>Matched SV</label><span>0.00</span></li>
+            <li><label>Bonus</label><span>0.00</span></li>
+            <li><label>Actual Reward Received</label><span>0.00</span></li>
+            <li><label>C/F Left SV</label><span>20,000.00</span></li>
+            <li><label>C/F Right SV</label><span>0.00</span></li>
+        </ul>
+    </form>
+</section>
+        <section class="sect3">
+    <div class="clear cc">
+        <div class="fl btnn"><a>Previous</a></div>
+        <div class="fl btnn2"><a>1</a></div>
+        <div class="fl btnn3"><a>Next</a></div>
+    </div>
+</section>
+
+    </div>
+</div>
+
+<div class="box-footer"></div>
+
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/data/bootstrap-datetimepicker.min.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script src="../js/PairingBonusReport32.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

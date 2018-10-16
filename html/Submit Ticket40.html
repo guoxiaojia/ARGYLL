@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Submit Ticket</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/SubmitTicket40.css">
+
+</head>
+<body>
+<header>
+    <p>Submit Ticket</p>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+</header>
+
+<div id="wrapper">
+    <div id="scroller">
+
+       <section>
+<form role="form" name="compose" id="compose" method="post" enctype="multipart/form-data" novalidate="novalidate">
+    <label>Category:</label>
+    <select name="categories" id="categories" required="required">
+        <option value="">- Select -</option>
+        <option value="1">Sales &amp; Marketing </option>
+        <option value="2">Finance </option>
+        <option value="3">IT </option>
+    </select>
+    <br>
+    <label>Subject:</label><input name="subject" type="text"><br>
+    <div class="clear cc">
+        <label class="mess fl">Message:</label>
+        <textarea class="fl" rows="9" name="query" required></textarea>
+    </div>
+
+    <input type="submit" value="Send">
+</form>
+
+</section>
+
+    </div>
+</div>
+
+<div class="box-footer"></div>
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

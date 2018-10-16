@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Edit My Profile</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/back.css">
+</head>
+<body>
+<div id="header">
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+    <p>Edit My Profile</p>
+    <span class="glyphicon glyphicon-menu-left" style="visibility: hidden;"></span>
+</div>
+
+<div id="wrapper">
+    <div id="scroller">
+
+     <div id="warpper">
+    <div id="content">
+        <div class="title">
+            <div class="active title-1">
+                <span>1.Profile<br/> Personal Information</span>
+            </div>
+            <div class="active title-2">
+                <span>2.Address<br/> Provide Information</span>
+            </div>
+            <div class="active title-3">
+                <span>3.Bank Details<br/> withdrawal Information</span>
+            </div>
+        </div>
+        <form id="update_profile" name="update_profile" method="post" action="#" onsubmit="return false;" novalidate="novalidate">
+            <div class="form-t">
+                <span>Withdrawal Information</span>
+            </div>
+            <div class="f-name">
+                <label for="">Account Name </label>
+                <input type="text" id="accname" name="accname" placeholder="Account Name" value="">
+            </div>
+            <div class="f-num">
+                <label for="">Bank</label>
+                <input type="text"  placeholder="Bank" id="Withdraw_bank" name="Withdraw_bank" value="">
+            </div>
+            <div class="f-addr">
+                <label for="">Account Number</label>
+                <input type="text" id="Withdraw_accnumber" name="Withdraw_accnumber" placeholder="Account Number" value="">
+            </div>
+            <div class="f-birth">
+                <label for="">Bank Branch</label>
+                <input type="text" id="Withdraw_bankadd" name="Withdraw_bankadd" placeholder="Bank Branch" value="">
+            </div>
+            <div class="f-code">
+                <label for="">Swift Code</label>
+                <input type="text" id="Withdraw_swiftcode" name="Withdraw_swiftcode"  placeholder="Swift Code" value="">
+            </div>
+            <div class="btns" role="menu" aria-label="Pagination">
+                <span aria-disabled="false">
+                   <a class="prev" href="#" role="menuitem">Previous</a>
+                </span>
+                <span aria-hidden="false">
+                    <a class="sub" role="menuitem">Submit</a>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+    </div>
+</div>
+<div class="box-footer"></div>
+
+<script src="../lib/zepto.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script>
+    $(function(){
+        resize(750);
+    })
+</script>
+<script src="../js/common.js"></script>
+</body>
+</html>

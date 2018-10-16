@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>reg</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/reg.css">
+</head>
+<body>
+<div id="page-container">
+    <div class="header">
+        <div class="login">
+            <img src="../images/login/reg_03.jpg" alt="">
+        </div>
+        <div class="header-1">
+            <div class="header-language">
+                <p>CHOOSE LANGUAGE:</p>
+                <div class="header-l-s">
+                    <select name="" id="">
+                        <option value="">English</option>
+                        <option value="">Chinese</option>
+                    </select>
+                </div>
+            </div>
+            <div class="header-link">
+                <p>ALREADY HAVE AN ACCOUNT?</p>
+                <div class="header-l-l">
+                    <a href="">Click here to SIGN IN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <form class="form form-horizontal" action="" name="addmember" id="user_register" method="post" novalidate="novalidate">
+            <h3 class="title">BECOME A CLIENT</h3>
+            <p class="dir">The first step to creating an account is to enter your
+                basic profile information.</p>
+            <h3 class="title-l">SPONSOR DETAILS</h3>
+
+
+            <div class="sponsor">
+                <div class="spo-id">
+                    <label class="spon" for="">Sponsor ID*</label>
+                    <input type="text" name="sponser" id="sponser" value="" class="help-block">
+                </div>
+                <!--错误提示1--会出现红色字体-->
+                <!--<small for="sponser" class="help-block">Please enter your Sponsor ID</small>-->
+                <span id="sponser_msg">
+                    <!--错误提示2&#45;&#45;会创建div标签的框框-->
+                   <!--<div class="alert alert-info">Sponsor Client ID does not exist.</div>-->
+                </span>
+
+
+                <div class="plc-id">
+                    <label class="plac" for="">Placement ID*</label>
+                    <input type="text" name="upline" id="upline" value="" class="help-block">
+                </div>
+                <!--错误提示1--会出现红色字体-->
+                <!--<small for="upline" class="help-block">Please enter your Placement ID</small>-->
+                <span id="upline_msg">
+                    <!--错误提示2;会创建div标签的框框-->
+                    <!--<div class="alert alert-info">Upline Not Available</div>-->
+                </span>
+
+                <div class="pos">
+                    <label for="">Position*</label>
+                    <select name="" id="" >
+                        <option value="" hidden="hidden" disabled="disabled" selected="selected">Select Position</option>
+                        <!--<option value="">EN</option>-->
+                        <!--<option value="">CN</option>-->
+                    </select>
+                </div>
+            </div>
+            <h3 class="title-l">ACCOUNT DETAILS</h3>
+
+            <div class="acc">
+                <div class="acc-p">
+                    <label for="">Username*</label>
+                    <input type="text" name="username"id="username">
+                </div>
+                <!--错误提示默认没有-->
+                <!--<small for="username" class="help-block">This field is required.</small>-->
+                <span id="username_msg">
+                    <!--<div class="alert alert-danger">Username is already taken.</div>-->
+                </span>
+
+                <div class="acc-p">
+                    <label for="">Password*</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <!--错误提示默认没有-->
+                <!--<small for="password" class="help-block">Your password must be 8 characters</small>-->
+
+                <div class="acc-ps">
+                    <label for="">Confirm Password*</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
+                <!--错误提示-->
+                <!--<small for="confirm_password" class="help-block">Please Enter the same Value again</small>-->
+
+                <div class="acc-pss">
+                    <label for="">Security Password*</label>
+                    <input type="password" id="secpassword" name="secpassword">
+                </div>
+                <!--<small for="secpassword" class="help-block">Please provide a password</small>-->
+
+                <div class="acc-psss">
+                    <label for="">Confirm Security Password*</label>
+                    <input type="password" id="secconfirm_password" name="secconfirm_password">
+                </div>
+                <!--<small for="secconfirm_password" class="help-block">Please Enter the same Value again</small>-->
+
+                <div class="acc-pin">
+                    <label for="">Package Pin*</label>
+                    <input type="password" id="promo_code" name="promo_code" placeholder="Package Pin" class="help-block">
+                </div>
+                <!--这个位置放错误提示1默认没有-->
+                <!--<small for="promo_code" class="help-block">Please Enter a Package Pin</small>-->
+                <span id="promo_code_msg">
+                    <!--错误提示2;会创建div标签的框框-->
+                    <!--<div class="alert alert-info">Invalid Package Security Password.</div>-->
+                </span>
+
+            </div>
+            <h3 class="title-l">CONTACT DETAILS*</h3>
+
+            <div class="con">
+                <div class="con-n">
+                    <label for="">Applicant Name*</label>
+                    <input type="text" name="appname" id="appname" class="valid">
+                </div>
+                <!--这个位置放错误提示1默认没有-->
+                <!--<small for="appname" class="help-block">Your User name must be at least 6 characters long</small>-->
+                <!--错误提示2;在span里会创建div标签的框框-->
+                <span id="appname_msg"></span>
+
+                <div class="con-e">
+                    <label for="">Email address*</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <!--错误提示-->
+                <!--<small for="email" class="help-block">Please enter valid Email address</small>-->
+                <span id="email_msg"></span>
+
+                <div class="con-e">
+                    <label for="">Confirm Email Address*</label>
+                    <input type="text" name="cfm_email" id="cfm_email">
+                </div>
+                <!--错误提示-->
+                <!--<small for="email" class="help-block">Please enter valid Email address</small>-->
+                <span id="email_msg"></span>
+
+                <div class="con-e">
+                    <label for="">Wechat ID*</label>
+                    <input type="text" name="wechat" id="wechat">
+                </div>
+                <!--Wechat ID错误提示地方-->
+                <span id="wechat_msg"></span>
+
+
+                <div class="con-na">
+                    <label for="">National Identity Number*</label>
+                    <input type="text" name="national_identity" id="national_identity">
+                </div>
+                <!--National Identity Number错误提示地方-->
+                <span id="ic_msg">
+                    <!--<div class="alert alert-danger">This National Identity has already been registered.</div>-->
+                </span>
+
+                <div class="con-cou">
+                    <label for="">Country*</label>
+                    <select name="" id="">
+                        <option value="">China</option>
+                        <option value="">English</option>
+                    </select>
+                </div>
+                <div class="con-code">
+                    <label for="">Code*</label>
+                    <input type="text" id="phonecode" name="phonecode" readonly class="valid">
+                    <span class="acc-t">+86</span>
+                </div>
+
+                <div class="con-mn">
+                    <label for="">Mobile Number*</label>
+                    <input type="text" id="mobile" name="mobile" onkeypress="return isNumberKeydot(event);" placeholder="Mobile No">
+                </div>
+                <!--Mobile Number错误提示地方-->
+                <span class="" id="mobile_avail_status"></span>
+
+            </div>
+            <h3 class="title-l">PACKAGE DETAILS</h3>
+            <div class="pac">
+                <div class="pac-n">
+                    <label for="">Package Name</label>
+                    <span>Price</span>
+                </div>
+                <div class="pac-1">
+                    <label for="">Argyll 1000</label>
+                    <span>$1,000</span>
+                </div>
+                <div class="pac-2">
+                    <label for="">Argyll 5000</label>
+                    <span>$5,000</span>
+                </div>
+                <div class="pac-3">
+                    <label for="">Argyll 10000</label>
+                    <span>$10,000</span>
+                </div>
+            </div>
+            <div class="button">
+                <input class="sub" type="submit" value="SIGNUP">
+                <input class="res" type="reset" value="CLEAR">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../js/rem.js"></script>
+<script>
+    window.onload = function(){
+        resize(750);
+    }
+</script>
+<script src="../lib/jquery-1.12.3.min.js"></script>
+</body>
+</html>

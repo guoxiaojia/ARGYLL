@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Betting Credit Top Up</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/package23.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+    <p>Betting Credit Top Up</p>
+    <a class="glyphicon glyphicon-menu-left" style="visibility: hidden"></a>
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <div data-pulsate="{glow:false}" class="alert alert-warning alert-dismissable fade in" id="alert" style="display: none; outline: rgba(203, 226, 193, 0.2) solid 2px; outline-offset: 16px;">
+            <div class="alert-icon fa fa-warning" id="icon"></div>
+            <div class="alert-content" id="message">
+            </div>
+        </div>
+        <div id="page-con">
+                <div class="error" style="display:none;">
+                    <h4 class="err-b">
+                        <span>Purchase Package Pin</span>
+                    </h4>
+                </div>
+                <div class="tab-t">
+                    <div class="div tab-t-1 active"><span>1.Purchase Package Pin</span></div>
+                    <div class="div tab-t-2 active"><span>2.Select Payment Method</span></div>
+                    <div class="div tab-t-3 active"><span>3.Confirm Details</span></div>
+                </div>
+                <div class="title">
+                    <p>Payment Details</p>
+                </div>
+                <div class="Amount">
+                    <div class="A-1">
+                        <span>Package Name</span>
+                        <span>Argyll 1000</span>
+                    </div>
+                    <div class="A-2">
+                        <span>ROI (Daily)</span>
+                        <span>0.10%</span>
+                    </div>
+                    <div class="A-3">
+                        <span>Price (US$)</span>
+                        <span>1000.00</span>
+                    </div>
+                </div>
+                <div class="Amo-from">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <h4>Debit From Registration Credit</h4>
+                            <div class="input-group">
+                                <div class="input-group-addon">US$</div>
+                                <input type="text" class="form-control group1" readonly id="" value="00">
+                            </div>
+                            <p class="avalible1">Available Amount US$ 99,500.00</p>
+                        </div>
+                        <div class="form-group">
+                            <h4 style="margin-top:0.6rem;">Debit From Cash Credit</h4>
+                            <div class="input-group">
+                                <div class="input-group-addon">US$</div>
+                                <input type="text" class="form-control group1" readonly id="" value="0">
+                            </div>
+                            <p class="avalible1">AAvailable Amount US$ 99,389.00</p>
+                        </div>
+                    </form>
+                    <form class="form-inline">
+                        <h4>Security Password</h4>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="password" class="form-control" name="tpin" id="tpin" required>
+                            </div>
+                        </div>
+                    </form>
+                    <!--<div for="tpin" class="error" style="color: rgb(255, 0, 0); border: 1px solid rgb(0, 0, 0); padding: 10px; margin: 10px; background: rgb(251, 194, 196);">请输入PIN码</div>-->
+                </div>
+            </div>
+        <section class="sect3 clear" role="menu" aria-label="Pagination">
+            <div class="btnn" aria-disabled="false">
+                <a href="#previous" role="menuitem">Previous</a>
+            </div>
+            <div class="btnn3" aria-disabled="false">
+                <a href="#previous" role="menuitem">Submit</a>
+            </div>
+        </section>
+    </div>
+ </div>
+
+<footer id="footer" class="box-footer"></footer>
+
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script>
+    $(function(){
+        resize(750);
+    })
+</script>
+<script src="../js/common.js"></script>
+</body>
+</html>

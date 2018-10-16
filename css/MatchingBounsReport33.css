@@ -1,0 +1,57 @@
+body{ background: #eee; }
+header{ z-index: 99; display: block; width: 100%; position:fixed; top: 0; background: #0991a5; color: #fff; font-size: 0.2rem;}
+header p{ text-align: center; height:0.6rem; line-height:0.6rem; margin: 0;  }
+header a.glyphicon{ color: #fff; position: absolute; top:0.22rem; left: 0.11rem;  }
+header a:link{ text-decoration: none;}
+
+/*日历*/
+.data{ }
+.data span{ background:#d5d5d5;}
+.data .input-group-addon{ padding:0.06rem 0.06rem;  }
+.data span a{ color: #646464; font-size: 0.18rem; }
+.datetimepicker{}
+
+.data form{ display: flex; flex-direction: row; justify-content: space-around; }
+.data form dl{ width: 36%; }
+.data form dl:last-child{ width: 15%; }
+.data form dl dt{ height: 0.4rem; line-height: 0.4rem; font-weight: normal; }
+.data form dl dd{ height: 0.34rem; line-height: 0.34rem;  position: relative; }
+.data form dl dd input[type=text]{ text-align: center; font-size: 0.12rem; background: #fff;}
+.data form dl dd input[type=submit]{  height:0.32rem; line-height: 0.32rem; width: 100%; background: #0f8da4; color: #fff; }
+.data .form-control { padding:0.06rem 0.03rem; }
+
+
+.sear{ position: relative; padding:0 0.18rem; margin-top: 40px;}
+.sear form{}
+.sear form input{ text-indent: 0.16rem; text-align: center; color: #9f9f9f; background: #fff; height: 0.4rem; line-height: 0.4rem; width: 100%; box-sizing:  border-box; border: 0.01rem solid #dcdcdc; border-radius: 0.06rem;}
+.sear span{ font-size: 0.16rem;  position: absolute; color: #9f9f9f; left: 50%; margin-left: -0.4rem; top: 0.13rem;}
+
+section{ padding-top:0.1rem; }
+section .list,section .list2,section .list3{ margin-left: 0.11rem; }
+
+.sect2{ margin-top: 0.2rem; }
+.sect2 .list,section .list2,section .list3{ margin-left: 0.11rem; }
+.sect2 .list3{ }
+.sect2 form{ padding-right:0.05rem; padding-left:0.05rem;}
+.sect2 form ul{ padding-right:0.05rem; padding-left:0.05rem;  background: #fff; border-radius: 0.04rem; border: 0.01rem solid #e8e8e8;}
+.sect2 form ul li{ height:0.38rem; line-height: 0.38rem;  border-bottom: 0.01rem solid #e2e2e2; font-size: 0.12rem; color: #3f3f3f;}
+.sect2 form ul li:last-child{ border-bottom: none;}
+.sect2 form ul li label{font-weight:normal; float: left; margin-bottom: 0; margin-left: 0.1rem; }
+.sect2 form ul li span{font-weight:normal; float: right; margin-right: 0.1rem; }
+
+
+.sect3{ margin: 0.4rem 0; text-align: center; }
+.sect3 .de{ display: inline-block;}
+.sect3 .de>div{ margin-right: 0.15rem; height: 0.4rem; line-height: 0.4rem; }
+.sect3 .de a{ color:#999;}
+.sect3 .btnn{ width: 0.95rem; background: #fff; border: 0.01rem solid #dcdcdc; border-radius:0.04rem;  }
+.sect3 .btnn2{ width: 0.46rem; background:#e5e5e5; border: 0.01rem solid #b5b5b5;  }
+.sect3 .btnn3{margin-right: 0;background:#0992a5;border-radius:0.04rem; width: 0.67rem;  }
+.sect3 .btnn3 a{  color: #fff; }
+.sect3 .de>div:active{ font-weight: bold;}
+
+@media (max-width:360px ) {
+
+
+}
+

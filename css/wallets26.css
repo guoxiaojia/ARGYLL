@@ -1,0 +1,11 @@
+body,html{width:100%;height:100%;overflow: hidden;}
+p{margin:0;}
+#page-con{width:100%;height:100%;background:url(../images/common/brief.jpg);background-size:cover;}
+#page-con .p-title{height:8%;padding:0 0.25rem;display: flex;flex-direction: row;justify-content: space-between;font-size:0.36rem;color:#fff;align-items: center;}
+#page-con .p-title a{ color: #fff;}
+#page-con .p-title a:link{ text-decoration: none;}
+
+#page-con .menu{width:100%;height:92%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;}
+#page-con .menu .me{display: flex;flex-direction: column;align-items: center;}
+.icon-qianbao2,.icon-yinzhengzhuanzhang,.icon-zhuanzhang{font-size:1.5rem;color:#fff;}
+#page-con .menu .me span{font-size:0.32rem;color:#fff;}

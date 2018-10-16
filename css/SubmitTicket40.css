@@ -1,0 +1,24 @@
+body{ background: #eee; }
+header{ display: block; position: relative; background: #0991a5; color: #fff; font-size: 0.2rem;}
+header p{ text-align: center; height:0.6rem; line-height:0.6rem; margin: 0;  }
+header a.glyphicon{ color: #fff; position: absolute; top:0.22rem; left: 0.11rem;  }
+header a{ color: #fff;}
+header a:link{ text-decoration: none;}
+
+#scroller{ padding-bottom: 20px;}
+section{ padding: 0 0.15rem;  padding-top: 40px;}
+
+section form label{ margin: 0.15rem 0; width: 0.7rem; height: 0.35rem; line-height: 0.35rem; font-weight: 400; margin-bottom: 0; }
+form select,input[type=text]{margin: 0.15rem 0;  color: #656565; height: 0.35rem; line-height: 0.35rem; width: 70%;  border: 0.01rem solid #dcdcdc; border-radius: 0.05rem; }
+section form input[type=text]{  padding:0 0.03rem;text-indent: 0.07rem; background: #fff; margin-left: 0.05rem; }
+section form textarea{ padding: 0.05rem 0.03rem; text-indent: 0.07rem; margin: 0.15rem 0; background: #fff;color: #656565; height: 2rem; line-height: 0.25rem; width: 70%;  border: 0.01rem solid #dcdcdc; border-radius: 0.05rem; }
+section form input[type=submit]{ margin-top: 0.15rem; margin-left: 0.7rem; width:0.8rem; background: #0590a3; color: #fff; height: 0.4rem; line-height: 0.38rem; border-radius: 0.05rem; }
+section form input[type=submit]:active{ font-weight: bold;}
+
+@media (min-width: 768px) {
+    section form{ text-align: center; }
+    section form .cc{display: flex; justify-content: center; }
+
+    
+}
+

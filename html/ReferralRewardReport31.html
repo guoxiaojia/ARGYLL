@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Referral Reward Report</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../lib/data/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/ReferralRewardReport31.css">
+</head>
+<body>
+<header>
+    <p>Referral Reward Report</p>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+</header>
+<div id="wrapper">
+    <div id="scroller">
+
+<div class="sear">
+    <form>
+        <input type="search" placeholder="Seach" aria-controls="table_id2">
+    </form>
+    <span class="glyphicon glyphicon-search"></span>
+</div>
+<!--日历-->
+<section class="data">
+    <form action="#" method="post">
+        <dl>
+            <dt>From Data</dt>
+            <dd>
+                <div class="input-group input-append date form_datetime">
+                    <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                    <input  type="text" aria-describedby="basic-addon1"  size="16" value="2017/07/07" readonly class="form-control"/>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>To Data</dt>
+            <dd>
+                <div class="input-group input-append date form_datetime">
+                    <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                    <input  type="text" aria-describedby="basic-addon1"  size="16" value="2017/07/07" readonly class="form-control"/>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt></dt>
+            <dd>
+                <input type="submit" value="Search">
+            </dd>
+        </dl>
+    </form>
+</section>
+<!--日历结束-->
+
+<section class="clear">
+    <div class="fl list">Display</div>
+    <div class="fl list2">
+        <select name="table_id2_length" aria-controls="table_id2">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="-1" selected="selected">All</option>
+        </select>
+
+    </div>
+    <div class="fl list3">records per page</div>
+</section>
+<section class="sect2">
+    <div  class="tab">
+        <div class="num">1</div>
+        <div class="lis">
+            <span>2017/04/04<a>CNY49467030</a></span>
+            <ul>
+                <li><div>Full Name</div><div>Amount(US$)</div></li>
+                <li><div>Delia</div><div>$ 36.00</div></li>
+                <li><div>Upline ID</div><div>Status</div></li>
+                <li><div>ARGYLL01</div><div class="bg">Processed</div></li>
+            </ul>
+        </div>
+    </div>
+    <div  class="tab">
+        <div class="num">2</div>
+        <div class="lis">
+            <span>2017/04/04<a>CNY49467030</a></span>
+            <ul>
+                <li><div>Full Name</div><div>Amount(US$)</div></li>
+                <li><div>Delia</div><div>$ 36.00</div></li>
+                <li><div>Upline ID</div><div>Status</div></li>
+                <li><div>ARGYLL01</div><div class="bg">Processed</div></li>
+            </ul>
+        </div>
+    </div>
+    <div  class="tab">
+        <div class="num">3</div>
+        <div class="lis">
+            <span>2017/04/04<a>CNY49467030</a></span>
+            <ul>
+                <li><div>Full Name</div><div>Amount(US$)</div></li>
+                <li><div>Delia</div><div>$ 36.00</div></li>
+                <li><div>Upline ID</div><div>Status</div></li>
+                <li><div>ARGYLL01</div><div class="bg">Processed</div></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="sect3" id="table_id2_paginate">
+    <div  class="clear bb">
+        <div class="fl btnn" aria-controls="table_id2" tabindex="0" id="table_id2_previous"><a href="#">Previous</a></div>
+        <div class="fl btnn2" aria-controls="table_id2" tabindex="0"><a href="#">1</a></div>
+        <div class="fl btnn3" aria-controls="table_id2" tabindex="0" id="table_id2_next"><a href="#">Next</a></div>
+    </div>
+</section>
+
+    </div>
+</div>
+
+<div class="box-footer"></div>
+
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/data/bootstrap-datetimepicker.min.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script src="../js/ReferralReardReport31.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

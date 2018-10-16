@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/address.css">
+</head>
+<body>
+<div id="header">
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+    <p>Edit My Profile</p>
+    <span class="glyphicon glyphicon-menu-left" style="visibility: hidden;"></span>
+</div>
+<div id="wrapper">
+    <div id="scroller">
+
+<div id="warpper">
+    <div id="content">
+        <div class="title">
+            <div class="active title-1">
+                <span>1.Profile<br/> Personal Information</span>
+            </div>
+            <div class="active title-2">
+                <span>2.Address<br/> Provide Information</span>
+            </div>
+            <div class="title-3">
+                <span>3.Bank Details<br/> withdrawal Information</span>
+            </div>
+        </div>
+        <form id="update_profile" name="update_profile" method="post" action="" onsubmit="return false;" novalidate="novalidate">
+            <div class="form-t">
+                <span>Address</span>
+            </div>
+            <div class="f-name">
+                <label for="">Address</label>
+                <input type="text" name="deliveryinfo_address" id="deliveryinfo_address" placeholder="Mars1">
+            </div>
+            <div class="f-num">
+                <label for="">State</label>
+                <input type="text" name="deliveryinfo_state" id="deliveryinfo_state" placeholder="Mars" class="form-control valid">
+            </div>
+            <div class="f-addr">
+                <label for="">City</label>
+                <input type="text" name="deliveryinfo_city" id="deliveryinfo_city" placeholder="Mars" value="">
+            </div>
+            <div class="f-birth">
+                <label for="">Country</label>
+                <select name="deliveryinfo_country" id="deliveryinfo_country" class="form-control valid">
+                    <option value="9">﻿Australia</option>
+                    <option value="24">Brunei</option>
+                    <option value="36">China</option>
+                    <option value="65">Germany</option>
+                    <option value="194">Hong Kong</option>
+                    <option value="77">India</option>
+                    <option value="78">Indonesia</option>
+                    <option value="83">Italy</option>
+                    <option value="85">Japan</option>
+                    <option value="195">Korea</option>
+                    <option value="92">Laos</option>
+                    <option value="196">Macau</option>
+                    <option value="27">Myanmar</option>
+                    <option value="135">Philippines</option>
+                    <option value="140">Russia</option>
+                    <option value="148">Saudi Arabia</option>
+                    <option value="157">South africa</option>
+                    <option value="159">Spain</option>
+                    <option value="165">Switzerland</option>
+                    <option value="167" selected="selected">Taiwan</option>
+                    <option value="170">Thailand</option>
+                    <option value="181">United arab emirates</option>
+                    <option value="182">United Kingdom</option>
+                    <option value="183">United States</option>
+                    <option value="189">Vietnam</option>
+                </select>
+            </div>
+            <div class="f-code">
+                <label for="">Postal Code</label>
+                <input type="text" name="deliveryinfo_zipcode" onkeypress="return isNumberKeydot(event);"  placeholder="00000000" value="">
+            </div>
+            <div class="btns" role="menu" aria-label="Pagination">
+                <span aria-disabled="false">
+                     <a class="prev" href="#" role="menuitem">Previous</a>
+                </span>
+                <span aria-hidden="false" aria-disabled="false">
+                    <a class="sub" role="menuitem">Next</a>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<div class="box-footer"></div>
+<script src="../lib/zepto.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script>
+    $(function(){
+        resize(750);
+    })
+</script>
+<script src="../js/common.js"></script>
+</body>
+</html>

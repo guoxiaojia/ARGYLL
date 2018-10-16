@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Personal.css">
+</head>
+<body>
+<div id="header">
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+    <p>Edit My Profile</p>
+    <span class="glyphicon glyphicon-menu-left" style="visibility: hidden;"></span>
+</div>
+<div id="wrapper">
+    <div id="scroller">
+
+       <div id="warpper">
+         <div id="content">
+        <div class="title">
+            <div class="active title-1">
+                <span>1.Profile<br/> Personal Information</span>
+            </div>
+            <div class="title-2">
+                <span>2.Address<br/> Provide Information</span>
+            </div>
+            <div class="title-3">
+                <span>3.Bank Details<br/> withdrawal Information</span>
+            </div>
+        </div>
+        <form id="update_profile" name="update_profile" method="post" action="#" onsubmit="return false;" novalidate="novalidate">
+            <div class="form-t">
+                <span>Personal Information</span>
+            </div>
+            <div class="f-name">
+                <label for="">Full Name <span>*</span></label>
+                <input type="text" id="personalinfo_name" disabled="disabled" required placeholder="Argyll" name="personalinfo_name" value="">
+            </div>
+            <div class="f-num">
+                <label for="">National Identity Number <span>*</span></label>
+                <input type="text" required placeholder="1234">
+            </div>
+            <div class="f-addr">
+                <label for="">Email Address</label>
+                <input type="email" name="personalinfo_email" id="personalinfo_email" placeholder="admin@argyll-tech.com">
+            </div>
+            <div class="f-birth">
+                <label for="">Date of Birth <span>*</span></label>
+                <input type="text" id="dob" required placeholder="12/11/1952" disabled="disabled" name="personalinfo_dob" value=" ">
+            </div>
+            <div class="f-id">
+                <label for="">Wachat ID<span>*</span></label>
+                <input type="text" id="personalinfo_wechat" required placeholder="123" name="personalinfo_wechat" >
+            </div>
+
+            <div class="btns" role="menu" aria-label="Pagination">
+                <a class="prev" href="#">Previous</a>
+                <div aria-hidden="false" aria-disabled="false">
+                    <input class="sub" type="submit" role="menuitem" value="Next">
+                </div>
+
+            </div>
+        </form>
+    </div>
+       </div>
+
+    </div>
+</div>
+<!--加载尾部-->
+<div class="box-footer"></div>
+<script src="../lib/zepto.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../lib/iscroll.js"></script>
+
+<script>
+    $(function(){
+        resize(750);
+    })
+</script>
+<script src="../js/common.js"></script>
+</body>
+</html>

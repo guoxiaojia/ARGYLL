@@ -1,0 +1,45 @@
+*{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+body,html{width:100%;height:100%;background:#EEEEEE;}
+#wrapper{background:#eeeeee;}
+p{margin:0;}
+header{background: #0991a5; color: #fff; font-size: 0.36rem;display:flex;justify-content:space-between;align-items: center;padding: 0 20px;height:60px;}
+header p{text-align: center;}
+header a.glyphicon{color: #fff; }
+header a:link{ text-decoration: none;}
+
+#page-con{}
+#page-con .tab-t{border:1px solid #E4E4E4;margin:0.3rem 0.25rem;border-radius:0.2rem;display: flex;flex-direction: row;justify-content: space-between;text-align: center;align-items: center;color:#666666;font-size:14px;overflow: hidden;}
+#page-con .tab-t .div{min-height:40px;display: flex;justify-content: center;
+align-items: center;padding:5px 3px;}
+#page-con .tab-t .tab-t-2 span{border-right:1px solid #C9C9C9;}
+.tab-t .active{background:#0991A5;}
+.tab-t .active span{color:#fff;}
+#page-con .tab-t .active span{border-right:none;}
+.active.tab-t-1{border-right:1px solid #C1E3E8;}
+
+#page-con .title{margin:0.3rem 0.25rem;border-bottom:1px solid #CACACA;font-size:14px;padding-bottom:0.1rem;}
+
+#page-con .Amount{overflow:hidden;margin:0 0.25rem;box-shadow:0 0.05rem 0.1rem 0 #AFAFAF;padding:0 0.2rem;}
+#page-con .Amount h4{font-size:14px;margin-top:0.22rem;margin-bottom:0.22rem;}
+.input-group-addon{color:#000;background:#D5D5D5;}
+.form-group p{margin-top:0.1rem;font-size:14px;color:#000;}
+
+.sect3{margin-bottom:0.3rem;text-align: center;margin-top:50px;}
+.sect3>div{ margin-right: 0.15rem; height: 40px; line-height: 40px; color:#999;display: inline-block;}
+.sect3 .btnn{ width: 80px; background: #fff; border: 0.01rem solid #dcdcdc; border-radius:0.1rem;  }
+.sect3 .btnn2{ width: 40px; background:#e5e5e5; border: 0.01rem solid #b5b5b5;  }
+.sect3 .btnn3{margin-right: 0; color: #fff; background:#0992a5;border-radius:0.1rem; width: 66px;border: 0.01rem solid #dcdcdc;  }
+.sect3 .btnn3 a{color:#fff;}
+
+.form-group{margin-bottom:0.1rem;}
+
+@media (min-width:760px) {
+    #page-con .tab-t .div{width:33.33333%;}
+    #page-con .tab-t{font-size:16px;}
+    #page-con .title{font-size:16px;}
+    #page-con .Amount h4{font-size:16px;}
+    .form-group{width:100%;}
+    .input-group{width:100%;}
+    .form-group p{font-size:16px;margin-top:0.2rem;margin-bottom:0.2rem;}
+}
+

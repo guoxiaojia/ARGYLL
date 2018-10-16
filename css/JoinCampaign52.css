@@ -1,0 +1,53 @@
+header{ display: block; position: relative; background: #0991a5; color: #fff; font-size: 0.2rem;}
+header p{ text-align: center; height:0.6rem; line-height:0.6rem;  }
+header a.glyphicon{ color: #fff; position: absolute; top:0.22rem; left: 0.11rem;  }
+header a:link{ text-decoration: none; }
+
+#scroller{ padding: 20px 10px;}
+
+.num0{ }
+.num0 .topp{ background: #00394e; color: #fff; line-height: 40px; text-align: center; }
+.num0 .topp span{ font-size: 12px;}
+.num0 .bott{ display: flex; flex-direction: row; border-top: 1px solid #b5b5b5; }
+.num0 .bott>div{ }
+.num0 .bott>div:nth-child(1){width:20%; background: #24b6c0; }
+.num0 .bott>div:nth-child(1) p{text-align: center; line-height: 40px; margin: 0;}
+.num0 .bott>div:nth-child(1) p.bigfont{font-size:20px;  }
+.num0 .bott>div:nth-child(2){ width: 80%; border-right: 1px solid #b5b5b5;}
+.num0 .bott>div:nth-child(2)>div{text-indent:2px;line-height: 40px; border-bottom: 1px solid #b5b5b5; }
+
+.num2{}
+.num2 ul{ border-left: 1px solid #b5b5b5; border-right: 1px solid #b5b5b5; margin-bottom: 0px;}
+.num2 ul li{ display: flex; flex-direction: row; border-bottom: 1px solid #b5b5b5;}
+.num2 ul>li:nth-child(1){ background:#eee;}
+.num2 ul li>div{ line-height: 40px; text-align: center;}
+.num2 ul li>div:nth-child(1){ width: 41%; }
+.num2 ul li>div:nth-child(2){ width: 25%;  }
+.num2 ul li>div:nth-child(3){ width: 34%; }
+
+.num3{border: 1px solid #b5b5b5; border-top: none; }
+.num3 .fonn{ padding :0 4px;display: flex; flex-direction: row; justify-content: space-between; font-size: 12px;}
+.num3 .fonn>div{ line-height: 28px; width: 50%;  }
+.num3 .fonn>div:nth-child(2){ text-align: right;  }
+.num3 .progress{ height: 16px; border-radius:8px;margin: 10px; }
+.num3 .progress .progress-bar{background-color:#0991a5;border-radius:8px;}
+
+.num4{ margin-top: 28px;padding-bottom: 20px; }
+.num4 form{ }
+.num4 form label{ height: 50px; line-height: 50px; margin-bottom: 0; }
+.num4 form .bars{ display: flex; flex-direction: row; justify-content: space-between; height: 42px; line-height: 42px; border: 1px solid #d5d5d5; }
+.num4 form .bars span{display: inline-block;width: 44px; text-align: center; background: #d5d5d5; }
+.num4 form .bars span.cor{ color:#aaa; }
+.num4 form .bars input{ width:100%; text-indent: 10px; letter-spacing: 1px;  }
+.num4 form .btns{margin-top: 60px; display:flex;justify-content: center; }
+.num4 form .btns input{ height: 40px; line-height: 40px; border-radius: 4px; width: 120px;margin: 0 20px; }
+.num4 form .btns>input:nth-child(1){ background: #e6e6e6; color: #9f9f9f; }
+.num4 form .btns>input:nth-child(2){ background:#0991a5; color: #fff; }
+
+
+
+
+
+
+
+

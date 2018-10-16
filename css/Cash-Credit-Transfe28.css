@@ -1,0 +1,21 @@
+p{margin:0;}
+#header{position:absolute;left:0;top:0;width:100%;height:60px;background:#0991A5;display: flex;flex-direction: row;justify-content: space-between;padding:0 0.25rem;align-items: center;font-size:0.36rem;color:#FAFCFD;}
+#header a{color: #fff; }
+#header a:link{ text-decoration: none; }
+
+#wrapper{width:100%;position: absolute;top:60px;bottom:0;background:#EEEEEE;}
+#content{margin:0 0.2rem;margin-top:0.5rem;background:#FFFFFF;box-shadow:0 0 3px 1px #d9d9d9;overflow: hidden;padding:0.6rem 0;}
+#content .c-t{margin:0.05rem; text-align: center;font-size:18px;margin-bottom:0.4rem;}
+
+#content .addr{margin:0 0.3rem 0.4rem;}
+#content .addr label{font-size:14px;font-weight: normal;line-height:34px;margin-bottom:0;margin-right:10px;}
+#content .addr input{border:1px solid #E0E0E0;height:34px;width:80%;padding-left:0.25rem;}
+.add-selected{text-align: center;}
+#content .add-selected  button{display:inline-block;width:72px;height:34px;outline:none;background-color:#0991A5;color:#fff;font-size:14px;border:0;border:1px solid #46ACBB;}
+
+@media (max-width:360px) {
+    #content .addr input{width:70%;}
+}
+@media (min-width:700px) {
+    #content .c-t{font-size:20px;}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Betting Credit Top Up</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/BettingCreditTopUp7.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+    <p>Betting Credit Top Up</p>
+    <a class="glyphicon glyphicon-menu-left" style="visibility: hidden"></a>
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <div id="page-con">
+            <div class="tab-t">
+                <div class="div tab-t-1 active"><span>1.Input Amount to top up</span></div>
+                <div class="div tab-t-2"><span>2.Select Payment Method</span></div>
+                <div class="div tab-t-3"><span>3.Confirm Pay ment</span></div>
+            </div>
+            <div class="title">
+                <p>Input Amount To TOP Up</p>
+            </div>
+            <div class="Amount">
+                <h4>Amount</h4>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="top_up_amt">Amount (in dollars)</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">$</div>
+                            <input type="text" class="form-control" id="top_up_amt" name="top_up_amt" onkeypress="return isNumberKey(event)" placeholder="Total Amount">
+                            <div class="input-group-addon">.00</div>
+                        </div>
+                    </div>
+                    <!--<div for="top_up_amt" class="error" style="color: rgb(255, 0, 0); border: 1px solid rgb(0, 0, 0); padding: 10px; margin: 10px; background: rgb(251, 194, 196);">Please Input Amount For Top Up</div>-->
+                </form>
+            </div>
+        </div>
+        <section class="sect3 clear">
+            <div class="btnn" aria-disabled="true">
+                <a href="#previous" role="menuitem">Previous</a>
+            </div>
+            <div class="btnn3" aria-disabled="false">
+                <a href="#previous" role="menuitem">Next</a>
+            </div>
+        </section>
+    </div>
+</div>
+
+<footer id="footer" class="box-footer"></footer>
+
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../js/common.js"></script>
+<script>
+    $(function(){
+        resize(750);
+    })
+</script>
+</body>
+</html>

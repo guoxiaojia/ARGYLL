@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>View Tickets</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/data/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/ViewTickets41.css">
+</head>
+<body>
+<header>
+    <p>View Tickets</p>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+    <div class="newtickets"><a href="Submit%20Ticket40.html">+</a></div>
+</header>
+
+<div id="wrapper">
+    <div id="scroller">
+        <div class="sear">
+    <form>
+        <input type="search" placeholder="Seach" aria-controls="table_id">
+    </form>
+    <span class="glyphicon glyphicon-search"></span>
+</div>
+<!--日历-->
+        <section class="data">
+    <form class="clear">
+        <dl>
+            <dt>From Data</dt>
+            <dd>
+                <div class="input-group input-append date form_datetime">
+                    <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                    <input  type="text" id="from" name="from" aria-describedby="basic-addon1"  size="16" value="2017/07/07" readonly class="form-control"/>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>To Data</dt>
+            <dd>
+                <div class="input-group input-append date form_datetime">
+                    <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                    <input  type="text" id="to" name="to" aria-describedby="basic-addon1" onkeypress="return isNumberKeydot(event);"  size="16" value="2017/07/07" readonly class="form-control"/>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt> Status</dt>
+            <dd>
+                <select name="search_status" id="search_status" class="form-control">
+                    <option value="">Choose Status</option>
+                    <option value="1" selected="">Open</option>
+                    <option value="2">Close</option>
+                </select>
+            </dd>
+        </dl>
+        <dl>
+            <dt></dt>
+            <dd>
+                <input type="submit" name="submit" value="Search">
+            </dd>
+        </dl>
+    </form>
+</section>
+<!--日历结束-->
+
+       <section class="clear">
+    <div class="fl list">Display</div>
+    <div class="fl list2">
+        <select name="table_id_length" aria-controls="table_id" >
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="-1" selected="selected">All</option>
+        </select>
+    </div>
+    <div class="fl list3">records per page</div>
+</section>
+       <section class="sect2">
+    <div  class="tab">
+        <div class="num">1</div>
+        <div class="lis">
+            <span>2017/04/04</span>
+            <ul>
+                <li><div>Ticket ID</div><div>Subject</div></li>
+                <li><div>BVLIb43</div><div>US$1,000.00</div></li>
+                <li><div>Status</div><div>Action</div></li>
+                <li><div>Argyll 1000</div><div>normal</div></li>
+            </ul>
+        </div>
+    </div>
+    <div  class="tab">
+        <div class="num">2</div>
+        <div class="lis">
+            <span>2017/04/04</span>
+            <ul>
+                <li><div>Ticket ID</div><div>Subject</div></li>
+                <li><div>BVLIb43</div><div>US$1,000.00</div></li>
+                <li><div>Status</div><div>Action</div></li>
+                <li><div>Argyll 1000</div><div>normal</div></li>
+            </ul>
+        </div>
+    </div>
+</section>
+       <section class="sect3" id="table_id_paginate">
+    <div class="clear btt">
+        <div class="fl btnn" aria-controls="table_id" tabindex="0" tabindex="0" id="table_id_previous"><a href="#">Previous</a></div>
+        <div class="fl btnn2" aria-controls="table_id" tabindex="0"><a>1</a></div>
+        <div class="fl btnn3" aria-controls="table_id" tabindex="0" id="table_id_next"><a href="#">Next</a></div>
+    </div>
+</section>
+    </div>
+</div>
+<div class="box-footer"></div>
+
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/data/bootstrap-datetimepicker.min.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script src="../js/ViewTickets41.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

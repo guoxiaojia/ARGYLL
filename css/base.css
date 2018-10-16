@@ -1,0 +1,45 @@
+
+/* webkit 浏览器
+#field1::-webkit-input-placeholder { color:#00f; }
+#field2::-webkit-input-placeholder {
+    color:#090;
+    background:lightgreen;
+    text-transform:uppercase;
+}
+*/
+html{font-size: 625%;}
+*,::before,::after{margin: 0;padding: 0;-webkit-tap-highlight-color:transparent;
+    -webkit-box-sizing: border-box;}
+
+body{
+    font-size:14px;
+    font-family: "Microsoft YaHei",sans-serif;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:link{text-decoration: none;}
+a:visited{color:#000000;}
+a:active{color:#000000;}
+
+
+
+ul{
+    list-style: none;
+}
+
+input,textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: transparent;
+}
+/*浮动*/
+.clear { zoom:1; }
+.ovfl { overflow: hidden}
+.clear:after { content:''; display:block; clear:both; }
+.fl { float:left;}
+.fr { float:right;}

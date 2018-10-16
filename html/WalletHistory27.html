@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Wallet History</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/data/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/WalletHistory27.css">
+</head>
+<body>
+<header>
+    <p>Wallet History</p>
+    <span class="glyphicon glyphicon-menu-left"></span>
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="sear">
+            <form>
+                <input type="search" placeholder="Seach" aria-controls="table_id2">
+            </form>
+            <span class="glyphicon glyphicon-search"></span>
+        </div>
+        <!--日历-->
+        <section class="data">
+           <form action="#" method="post" class="form-horizontal form-bordered">
+               <dl>
+                   <dt>From Data</dt>
+                   <dd>
+                       <div class="input-group input-append date form_datetime">
+                         <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                        <input  type="text" id="from" name="from" aria-describedby="basic-addon1"  size="16" value="2017/07/01" readonly class="form-control"/>
+                       </div>
+                   </dd>
+               </dl>
+               <dl>
+                   <dt>To Data</dt>
+                   <dd>
+                       <div class="input-group input-append date form_datetime">
+                           <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                           <input  type="text" id="to" name="to" onkeypress="return isNumberKeydot(event);" aria-describedby="basic-addon1"  size="16" value="2017/07/06" readonly class="form-control"/>
+                       </div>
+                   </dd>
+               </dl>
+               <dl>
+                   <dt>Select Trx Type</dt>
+                   <dd>
+                       <select class="form-control" name="tran_code">
+                           <option value="">Select Trx Type</option>
+                           <option value="PCOD"> 购买配套代码 -PCOD - Purchase Package Pin </option>
+                           <option value="PPAC">购买配套 -PPAC - Purchase Package </option>
+                           <option value="MATB"> 代数提成 - Matching bonus </option>
+                           <option value="TRSF"> 转账 -TRSF - Transfers In/Out </option>
+                           <option value="TOPUP"> 对冲币充值 - Hedge Credit Top Up </option>
+                           <option value="WDRL"> 提现 -WDRL - Withdrawals </option>
+                           <option value="PLCBET"> 对冲活动 - Campaign Placed </option>
+                           <option value="INT"> 分红 - INT - ROI </option>
+                           <option value="CAMP"> Campaign bonus - Campaign bonus </option>
+                           <option value="DR"> 市场平衡提成 - DR - Pairing bonus </option>
+                           <option value="RR"> 客户推荐提成 - RR - Referral bonus </option>
+                       </select>
+                   </dd>
+               </dl>
+               <dl>
+                   <dt>Select Wallet</dt>
+                   <dd>
+                       <select class="form-control" name="wallet">
+                           <option value="" selected="">Select Wallet</option>
+
+                           <option value="1" >Registration Credit Wallet                       </option>
+
+                           <option value="2">Cash Credit Wallet                       </option>
+
+                           <option value="3">Hedge Credit                       </option>
+                       </select>
+                   </dd>
+               </dl>
+               <dl>
+                   <dd>
+                       <input type="submit" name="submit" value="Search">
+                   </dd>
+               </dl>
+           </form>
+        </section>
+        <!--日历结束-->
+        <section class="data-ban">
+            <div class="data-ban-box">
+                <p>
+                    <span>Registration Credit Wallet:</span>
+                    <b>US$ 200.00</b>
+                </p>
+                <p>
+                    <span>Cash Credit Wallet:</span>
+                    <b>US$ 800.00</b>
+                </p>
+                <p>
+                    <span>Hedge Credit:</span>
+                    <b>US$ 0.00</b>
+                </p>
+            </div>
+        </section>
+        <section class="clear">
+            <div class="fl list">Display</div>
+            <div class="fl list2">
+                <select name="table_id2_length" aria-controls="table_id2">
+                    <option value="10">10 </option>
+                    <option value="25">25 </option>
+                    <option value="50">50 </option>
+                    <option value="-1" selected="selected">All&nbsp;</option>
+                </select>
+            </div>
+            <div class="fl list3">records per page</div>
+        </section>
+        <section class="sect2" role="grid">
+            <div  class="tab">
+                <div class="num">
+                    <b></b>
+                    <span>1</span>
+                </div>
+                <div class="lis">
+                    <span>2017/04/04</span>
+                    <ul>
+                        <li><div>Remarks</div><div>Credit</div></li>
+                        <li>
+                            <div>Admin Fund Transfer to Client - Credit
+                                Remarks: Test</div>
+                            <div>Argyll  1000</div>
+                        </li>
+                        <li><div>Wallet</div><div>Debit</div></li>
+                        <li><div>Registration credit wallet</div><div>Us$250.00</div></li>
+                    </ul>
+                </div>
+            </div>
+            <div  class="tab">
+                <div class="num">
+                    <b></b>
+                    <span>2</span>
+                </div>
+                <div class="lis">
+                    <span>2017/04/04</span>
+                    <ul>
+                        <li><div>Remarks</div><div>Credit</div></li>
+                        <li><div>purchase pin a1000,$250</div><div>Argyll  1000</div></li>
+                        <li><div>Wallet</div><div>Debit</div></li>
+                        <li><div>Registration credit wallet</div><div>Us$250.00</div></li>
+                    </ul>
+                </div>
+            </div>
+            <div  class="tab">
+                <div class="num">
+                    <b></b>
+                    <span>3</span>
+                </div>
+                <div class="lis">
+                    <span>2017/03/30</span>
+                    <ul>
+                        <li><div>Remarks</div><div>Credit</div></li>
+                        <li><div>purchase pin a1000,$250</div><div>Argyll  1000</div></li>
+                        <li><div>Wallet</div><div>Debit</div></li>
+                        <li><div>Registration credit wallet</div><div>Us$250.00</div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sect3" id="table_id2_paginate">
+            <div class="btnn" aria-controls="table_id2" tabindex="0" id="table_id2_previous">
+                <a href="#">Previous</a>
+            </div>
+            <div class="btnn2" aria-controls="table_id2">
+                <a href="#" tabindex="0">1</a>
+            </div>
+            <div class="btnn3" aria-controls="table_id2" tabindex="0" id="table_id2_next">
+                <a href="#">Next</a>
+            </div>
+        </section>
+   </div>
+</div>
+<footer id="footer" class="box-footer"></footer>
+
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/data/bootstrap-datetimepicker.min.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script src="../js/WalletHistory27.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Memo</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/Memo.css">
+</head>
+<body>
+<header>
+    <p>Memo</p>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="sear">
+            <form>
+                <input type="search" placeholder="Seach" aria-controls="table_id">
+            </form>
+            <span class="glyphicon glyphicon-search"></span>
+        </div>
+        <section class="clear">
+            <div class="fl list">Display</div>
+            <div class="fl list2">
+                <select name="table_id_length" aria-controls="table_id">
+                    <option value="10">10 </option>
+                    <option value="25">25 </option>
+                    <option value="50">50 </option>
+                    <option value="-1" selected="selected">All&nbsp;</option>
+                </select>
+            </div>
+            <div class="fl list3">records per page</div>
+        </section>
+        <section>
+            <div class="tab-list">
+                <ul>
+                    <li><label>Date</label><span>No Data Found</span></li>
+                    <li><label>Title</label><span>No Data Found</span></li>
+                    <li><label>Action</label><span>No Data Found</span></li>
+                </ul>
+                <br>
+                <ul>
+                    <li><label>Date</label><span>No Data Found</span></li>
+                    <li><label>Title</label><span>No Data Found</span></li>
+                    <li><label>Action</label><span>No Data Found</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="sect3" id="table_id_paginate">
+            <div class="btnn disabled" aria-controls="table_id" tabindex="0" id="table_id_previous">
+                <a href="#">Previous</a>
+            </div>
+            <div class="btnn2" aria-controls="table_id">
+                <a href="#" tabindex="0">1</a>
+            </div>
+            <div class="btnn3 disabled" aria-controls="table_id" tabindex="0" id="table_id_next">
+                <a href="#">Next</a>
+            </div>
+        </section>
+    </div>
+</div>
+<footer id="footer" class="box-footer"></footer>
+
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/Memo.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

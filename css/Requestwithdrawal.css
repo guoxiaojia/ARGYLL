@@ -1,0 +1,13 @@
+#wrapper{ background: #eee; }
+header{ display: block; position: relative; background: #0991a5; color: #fff; font-size: 0.2rem;}
+header p{ text-align: center; height:0.6rem; line-height:0.6rem;  }
+header a.glyphicon{ color: #fff; position: absolute; top:0.22rem; left: 0.11rem;  }
+header a:link{ text-decoration: none; }
+
+
+.panel-body h4{margin: 25px 0;text-align: center;}
+
+.btn-info{background-color:#0991A5;border-color: #008ea5;}
+
+
+

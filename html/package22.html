@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Betting Credit Top Up</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/package22.css">
+</head>
+<body>
+<header>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+    <p>Purchase Package Pin</p>
+    <a class="glyphicon glyphicon-menu-left" style="visibility: hidden"></a>
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <div id="page-con">
+            <div class="tab-t">
+                <div class="div tab-t-1 active"><span>1.Purchase Package Pin</span></div>
+                <div class="div tab-t-2 active"><span>2.Select Payment Method</span></div>
+                <div class="div tab-t-3"><span>3.Confirm Details</span></div>
+            </div>
+            <div class="Amount">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <h4>Package Pin Amount: US$ 1,000</h4>
+                        <h4>Debit From Registration Credit</h4>
+                        <div class="input-group">
+                            <div class="input-group-addon">US$</div>
+                            <input type="text" class="form-control" id="credit_1" name="credit_1" value="0" onblur="check_payment()">
+                        </div>
+                        <p class="avalible1">Available Amount US$ 99,500.00</p>
+                    </div>
+                    <!--<div for="credit_1" class="error">Payment Amount Insufficient</div>-->
+                    <div class="form-group">
+                        <h4 style="margin-top:0.6rem;">Debit From Cash Credit</h4>
+                        <div class="input-group">
+                            <div class="input-group-addon">US$</div>
+                            <input type="text" class="form-control" id="credit_2" name="credit_2" value="0" onblur="check_payment()">
+                        </div>
+                        <p>Available Amount US$ 99,389.00</p>
+                    </div>
+                    <!--<div for="credit_2" class="error">Payment Amount Insufficient</div>-->
+                </form>
+            </div>
+        </div>
+        <section class="sect3 clear" role="menu" aria-label="Pagination">
+            <div class="btnn" aria-disabled="false">
+                <a href="#previous" role="menuitem">Previous</a>
+            </div>
+            <div class="btnn3" aria-disabled="false">
+                <a href="#previous" role="menuitem">Next</a>
+            </div>
+        </section>
+    </div>
+</div>
+<footer id="footer" class="box-footer"></footer>
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script>
+    $(function(){
+        resize(750);
+    })
+</script>
+<script src="../js/common.js"></script>
+</body>
+</html>

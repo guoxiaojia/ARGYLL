@@ -1,0 +1,33 @@
+body{ background: #f0eff5; }
+header{ text-align: center;}
+header a{ width: 50%; display: inline-block; padding-top: 0.5rem;}
+header a img{ width: 100%;}
+
+section{ padding-top: 0.5rem; }
+section .list{ display: flex; flex-direction: row; justify-content: space-around; }
+section .list dl{ width:0.68rem; margin-bottom: 0.08rem; }
+section .list dl dt{font-weight: normal;}
+section .list dl dt .yuan{ text-align: center; width: 100%; height: 0.68rem; line-height: 0.68rem; border-radius: 50%; background: #0f8da4; }
+section .list dl dt .hong{ background: #f17575;}
+section .list dl dt .huang{ background: #cf8e3a;}
+section .list dl dt .lan{ background: #238fb6;}
+section .list dl dt .yuan span{color: #fff; font-size: 0.35rem; }
+section .list dl dt a:link{ text-decoration: none;}
+
+section .list dl dd{ padding: 0.05rem 0;  text-align: center; font-size: 14px;}
+footer{margin-top:1rem; width: 100%; text-align: center; line-height: 0.5rem;}
+body footer a{ font-size: 0.24rem; color:#8f8f8f!important; }
+
+body footer a:active{ text-decoration:none;}
+body footer a:visited{ text-decoration: none;}
+body footer a:link{ text-decoration: none;}
+body footer a:hover{ text-decoration: none;}
+
+@media (min-width:760px) {
+    section .list{margin-bottom:0.3rem}
+    section .list dl{width:1rem}
+    section .list dl dt .yuan{height:1rem;line-height:1rem;}
+    section .list dl dt .yuan span{font-size:0.6rem;}
+    section .list dl dd{font-size:18px;}
+    body footer a{font-size:34px;}
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Withdrawal History</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../lib/data/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/WithdrawalHistory37.css">
+</head>
+<body>
+<header>
+    <p>Withdrawal History</p>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="sear">
+            <form>
+                <input type="search" placeholder="Seach" aria-controls="table_id">
+            </form>
+            <span class="glyphicon glyphicon-search"></span>
+        </div>
+        <!--日历-->
+        <section class="data">
+            <form action="#" method="post">
+                <dl>
+                    <dt>From Data</dt>
+                    <dd>
+                        <div class="input-group input-append date form_datetime">
+                            <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                            <input  type="text" id="from" name="from" aria-describedby="basic-addon1"  size="16" value="2017/04/21" readonly class="form-control"/>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>To Data</dt>
+                    <dd>
+                        <div class="input-group input-append date form_datetime">
+                            <span class="input-group-addon"><a class="glyphicon glyphicon-calendar"></a></span>
+                            <input  type="text" id="to" name="to" onkeypress="return isNumberKeydot(event);" aria-describedby="basic-addon1"  size="16" value="2017/04/21" readonly class="form-control"/>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <input type="submit" name="submit" value="Search">
+                    </dd>
+                </dl>
+            </form>
+        </section>
+        <!--日历结束-->
+
+        <section class="clear">
+            <div class="fl list">Display</div>
+            <div class="fl list2">
+                <select aria-controls="table_id" name="table_id_length">
+                    <option value="10">10 </option>
+                    <option value="25">25 </option>
+                    <option value="50">50 </option>
+                    <option value="-1" selected="selected">All </option>
+                </select>
+            </div>
+            <div class="fl list3">records per page</div>
+        </section>
+        <section class="sect2">
+            <div  class="tab">
+                <div class="num">
+                    <b></b>
+                    <span>1</span>
+                </div>
+                <div class="lis">
+                    <ul>
+                        <li>
+                            <div>Request Date</div>
+                            <div>Net Amount</div>
+                        </li>
+                        <li>
+                            <div>05/07/2017</div>
+                            <div>540.00 </div>
+                        </li>
+                        <li>
+                            <div>wallet</div>
+                            <div>Status</div>
+                        </li>
+                        <li>
+                            <div>Cash Credit Wallet  </div>
+                            <div>
+                                <button class="btn btn-danger" disabled="disabled">Rejected</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div>Request Amount</div>
+                            <div>Action</div>
+                        </li>
+                        <li>
+                            <div>100.00 </div>
+                            <div>
+                                <button class="viewMo btn btn-default" rel="4011" id="view_details">Details</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div  class="tab">
+                <div class="num">
+                    <b></b>
+                    <span>2</span>
+                </div>
+                <div class="lis">
+                    <ul>
+                        <li>
+                            <div>Request Date</div>
+                            <div>Net Amount</div>
+                        </li>
+                        <li>
+                            <div>05/07/2017</div>
+                            <div>540.00 </div>
+                        </li>
+                        <li>
+                            <div>wallet</div>
+                            <div>Status</div>
+                        </li>
+                        <li>
+                            <div>Cash Credit Wallet  </div>
+                            <div>
+                                <button class="btn btn-danger" disabled="disabled">Rejected</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div>Request Amount</div>
+                            <div>Action</div>
+                        </li>
+                        <li>
+                            <div>100.00 </div>
+                            <div>
+                                <button class="viewMo btn btn-default" rel="4011" id="view_details">Details</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sect3" id="table_id_paginate">
+            <div class="btnn" aria-controls="table_id" tabindex="0" id="table_id_previous">
+                <a href="#">Previous</a>
+            </div>
+            <div class="btnn2" aria-controls="table_id">
+                <a href="#" tabindex="0">1</a>
+            </div>
+            <div class="btnn3" aria-controls="table_id" tabindex="0" id="table_id_next">
+                <a href="#">Next</a>
+            </div>
+        </section>
+
+        <div id="modal-withdraweldetails" tabindex="-1" role="dialog" aria-labelledby="modal-default-label" aria-hidden="false" class="modal fade in" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                        <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                        <h4 class="modal-title text-center" id="modal-default-label">Action</h4>
+                    </div>
+                    <div class="modal-body"><table class="table table-striped">
+                        <tbody>
+                        <tr>
+                            <td>Request Date:</td> <td>2017-07-05 09:55:49 </td>
+                        </tr>
+                        <tr>
+                            <td>Client Name:</td> <td>CNY36917165 </td>
+                        </tr>
+                        <tr>
+                            <td>Wallet:</td> <td>﻿Cash Credit Wallet </td>
+                        </tr>
+                        <tr>
+                            <td>Amount:</td> <td>100.00 USD </td>
+                        </tr>
+                        <tr>
+                            <td>Charges:</td> <td>10.00 USD </td>
+                        </tr>
+                        <tr>
+                            <td>Amount:</td> <td>540.00 CNY </td>
+                        </tr>
+                        <tr><td colspan="2" align="center"><b>Bank Details</b></td></tr>
+                        <tr>
+                            <td>Account Number:</td> <td>tt </td>
+                        </tr>
+                        <tr>
+                            <td>Account Name:</td> <td>jackky1 </td>
+                        </tr>
+                        <tr>
+                            <td>Bank Name:</td> <td>tt </td>
+                        </tr>
+                        <tr>
+                            <td>Swift Code:</td> <td>jackky1 </td>
+                        </tr>
+                        <tr>
+                            <td>Rejected Date:</td> <td>06/07/2017 21:23:05 </td>
+                        </tr>
+                        <tr>
+                            <td>Remarks:</td> <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Status:</td><td>
+                            <span><span class="label label-danger">Rejected</span></span>
+                        </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer" class="box-footer"></footer>
+
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/html5shiv-printshiv.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/data/bootstrap-datetimepicker.min.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script src="../js/WithdrawalHistory37.js"></script>
+<script src="../js/common.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.viewMo').on('click', function(e) {
+            e.preventDefault();
+            $('#modal-withdraweldetails').fadeIn();
+        });
+        $('.close').on('click',function(e){
+            e.preventDefault();
+            $('#modal-withdraweldetails').fadeOut();
+        })
+    });
+
+</script>
+</body>
+</html>

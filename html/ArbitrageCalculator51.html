@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/ArbitrageCalculator51.css">
+</head>
+<body>
+<header>
+    <p>Arbitrage Calculator</p>
+    <a href="javascript:history.back()" class="glyphicon glyphicon-menu-left"></a>
+</header>
+
+<div id="wrapper">
+    <div id="scroller">
+        <div class="top-a">
+            <ul>
+                <li><div>Sports Type</div><div>Baseball</div></li>
+                <li><div>League</div><div>Korea Professional Baseball</div></li>
+                <li><div>Event</div><div>Doosan Bears-KT Wiz Suwon</div></li>
+                <li><div>Match Time</div><div>05 Jul 17:30</div></li>
+            </ul>
+        </div>
+
+        <div class="nums">
+            <div>Total Stake</div>
+            <div>
+                <span>$</span><input name="total_stake" size="9" class="input_1" maxlength="8" value="2000.00" onkeypress="return isNumberKey(event);">
+            </div>
+        </div>
+
+        <div class="tables">
+            <ul>
+                <li><div></div><div>Odds</div><div>Stake</div></li>
+                <li><div>Pinnacle</div><div>2.04</div><div id="divArbCalculate_stake1">$1009.71</div></li>
+                <li><div>Betngo</div><div>2.08</div><div id="divArbCalculate_stake2">$990.29</div></li>
+            </ul>
+        </div>
+
+        <div class="bottoms">
+            <ul>
+                <li>
+                    <div>Total Winnings</div>
+                    <div id="divArbCalculate_winnings">$2059.80</div>
+                </li>
+                <li><div>Profit</div><div id="divArbCalculate_profit">$59.80</div></li>
+                <li><div>Arb Percentage</div><div id="divArbCalculate_profitability">2.990%</div></li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="box-footer"></div>
+
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/iscroll.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>
